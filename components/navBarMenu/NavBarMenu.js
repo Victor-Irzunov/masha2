@@ -4,7 +4,7 @@ import avatar from '../../public/images/logo2.webp'
 import { motion } from "framer-motion"
 import Link from 'next/link'
 import { navBar } from '../../constans/Constans'
-import {  MenuOutlined } from '@ant-design/icons'
+import { MenuOutlined } from '@ant-design/icons'
 import { observer } from 'mobx-react-lite'
 import DrawerMenu from './drawerMenu/DrawerMenu'
 import { useScreens } from '../../constans/constScreens'
@@ -75,44 +75,28 @@ export const NavBarMenu = observer(() => {
 							>
 								{
 									navBar.map(el => {
-										if (el.key === 1) {
-											if (user?.userData?.isAdmin) {
-												return (
-													<li
-														variants={linkAnimation}
-														key={el.key}
-														custom={el.key}
-														className='mb-3'>
-														<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
-															className='relative before:border-b before:border-black before:transition-all before:duration-300 before:ease-in-out before:absolute before:-bottom-1 before:h-0 hover:before:h-full before:w-0 hover:before:w-full'
-														>
-															{el.label}
-														</Link>
-													</li>
-												)
-											}
-										} else {
-											return (
-												<motion.li
-													variants={linkAnimation}
-													key={el.key}
-													custom={el.key}
-													className='mb-3'>
-													<Link
-														href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
-														className='relative before:border-b before:border-black before:transition-all before:duration-300 before:ease-in-out before:absolute before:-bottom-1 before:h-0 hover:before:h-full before:w-0 hover:before:w-full'
-													>
-														{el.label}
-														<span className='lowercase text-xs block'>
-															{el.span && el.span}
-														</span>
-													</Link>
-												</motion.li>
-											)
-										}
+
+										return (
+											<motion.li
+												variants={linkAnimation}
+												key={el.key}
+												custom={el.key}
+												className='mb-3'>
+												<Link
+													href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
+													className='relative before:border-b before:border-black before:transition-all before:duration-300 before:ease-in-out before:absolute before:-bottom-1 before:h-0 hover:before:h-full before:w-0 hover:before:w-full'
+												>
+													{el.label}
+													<span className='lowercase text-xs block'>
+														{el.span && el.span}
+													</span>
+												</Link>
+											</motion.li>
+										)
+
 									})
 								}
-								
+
 							</ul>
 						</div>
 						<motion.div
