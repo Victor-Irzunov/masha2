@@ -13,7 +13,7 @@ const ModalZapisi = ({ isModalOpen,setIsModalOpen, price}) => {
 				open={isModalOpen} onCancel={handleCancel}
 				footer={false}
 			>
-				<FormZapisUser price={price} />
+				<FormZapisUser price={price} handleCancel={handleCancel} />
 			</Modal>
 		</>
 	);

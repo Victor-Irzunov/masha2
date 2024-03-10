@@ -1,16 +1,18 @@
 import { useState, forwardRef } from 'react'
-import { Button, Select, Form, Input, Space, Radio, message } from 'antd'
+import { Button, Select, Form, Input, Space, Radio, message, Alert } from 'antd'
 import InputMask from 'react-input-mask'
 import ModalComp from '../../modal/ModalComp'
 import moment from 'moment'
 import { sendOrderTelegram } from '../../../http/telegramAPI'
 
-const FormZapisUser = forwardRef(({ value, setOpen, setValue, price }, ref) => {
+
+const FormZapisUser = forwardRef(({ value, setOpen, setValue, price, handleCancel }, ref) => {
 	const [form] = Form.useForm()
 	const [tel, setTel] = useState('')
 	const [valueSelect, setValueSelect] = useState('')
 	const [isModalOpen, setIsModalOpen] = useState(false)
 	const [dataModal, setDataModal] = useState({})
+	const [isAlert, setIsAlert] = useState(false)
 	const showModal = () => {
 		setIsModalOpen(true)
 	}
@@ -41,9 +43,12 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue, price }, ref) => {
 
 
 		sendOrderTelegram(messageForm)
-			.then(data => {
-				console.log("🚀 🚀 🚀  _ onFinish _ data:", data)
-			})
+    .then(data => {
+        handleCancel()
+        message.success('Ваша заявка принята, Мария в ближайшее время свяжется с вами.', [6]);
+        form.resetFields();
+    });
+
 	}
 
 
@@ -76,6 +81,8 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue, price }, ref) => {
 
 	return (
 		<>
+		
+
 			<ModalComp
 				setIsModalOpen={setIsModalOpen}
 				isModalOpen={isModalOpen}
@@ -174,10 +181,10 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue, price }, ref) => {
 				</Space>
 
 				<div className='mb-10'>
-					<p className='mb-0'>Стоимость консультации:{' '}
-						{/* {valueSelect === 'семейная' ? '120,00 руб' : '96,00 руб'} */}
+					{/* <p className='mb-0'>Стоимость консультации:{' '}
+						{valueSelect === 'семейная' ? '120,00 руб' : '96,00 руб'}
 						{price}
-					</p>
+					</p> */}
 					<p className='text-xs'>Продолжительность консультации: {valueSelect === 'семейная' ? '90 мин' : '60 мин'}</p>
 				</div>
 

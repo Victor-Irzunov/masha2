@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	output: 'export',
+	trailingSlash: true,
 	images: {
-	  domains: ['masha2-nu.vercel.app'],
-	},
- };
- 
- module.exports = nextConfig;
- 
+		unoptimized: true,
+  }
+}
+
+module.exports = nextConfig

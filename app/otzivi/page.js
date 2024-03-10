@@ -84,7 +84,7 @@ export default async function OtzyvyPage() {
 										</div>
 									</div>
 									<div className='pl-8'>
-										<p className='text-xs text-gray-500 inline'>{el.response}</p>
+										<p className='text-xs text-gray-500'>{el.response}</p>
 									</div>
 								</div>
 							</div>

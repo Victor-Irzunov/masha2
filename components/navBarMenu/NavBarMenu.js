@@ -1,5 +1,5 @@
 "use client"
-import { useState, useContext, useEffect } from 'react'
+import { useState } from 'react'
 import avatar from '../../public/images/logo2.webp'
 import { motion } from "framer-motion"
 import Link from 'next/link'
@@ -9,7 +9,6 @@ import { observer } from 'mobx-react-lite'
 import DrawerMenu from './drawerMenu/DrawerMenu'
 import { useScreens } from '../../constans/constScreens'
 import Image from 'next/image'
-
 
 const linkAnimation = {
 	hidden: {
@@ -96,7 +95,6 @@ export const NavBarMenu = observer(() => {
 
 									})
 								}
-
 							</ul>
 						</div>
 						<motion.div
@@ -115,8 +113,6 @@ export const NavBarMenu = observer(() => {
 						</motion.div>
 					</motion.div>
 				</nav>
-
-
 			</header>
 			:
 			<header>

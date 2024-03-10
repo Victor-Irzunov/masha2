@@ -28,7 +28,7 @@ const LinkArticleClient = ({ extraArticles }) => {
 									<li className='mb-1' key={el.id}
 										onClick={() => countPlusOne(el.id)}
 									>
-										<Link href={{ pathname: `/blog/${el.link}/${el.id}` }}
+										<Link href={{ pathname: `/blog/${el.link}/` }}
 											className='underline'
 										>
 											{el.title}

@@ -311,39 +311,39 @@ export const navBar = [
 		key: 0
 	},
 	{
-		link: '/uslugi',
+		link: '/uslugi/',
 		label: 'мои услуги',
 		key: 2
 	},
 
 	{
-		link: '/stoimost-psihologa',
+		link: '/stoimost-psihologa/',
 		label: 'стоимость',
 		key: 3
 	},
 
 	{
-		link: '/blog',
+		link: '/blog/',
 		label: 'мои статьи',
 		key: 4
 	},
 	{
-		link: '/smi',
+		link: '/smi/',
 		label: 'я в СМИ',
 		key: 5
 	},
 	{
-		link: '/psiholog-mariya-irzunova',
+		link: '/psiholog-mariya-irzunova/',
 		label: 'обо мне',
 		key: 6
 	},
 	{
-		link: '/otzivi',
+		link: '/otzivi/',
 		label: 'отзывы',
 		key: 7
 	},
 	{
-		link: '/kontakti',
+		link: '/kontakti/',
 		label: 'контакты',
 		key: 8
 	},

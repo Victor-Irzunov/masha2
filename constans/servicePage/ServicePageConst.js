@@ -9,7 +9,7 @@ export const data = [
 	{
 		id: 1,
 		h3: 'Индивидуальная консультация',
-		link: 'индивидуальная-консультация',
+		link: 'individualnaya-konsultatsiya',
 		img: konsultaciya,
 		type: [
 			{
@@ -56,7 +56,7 @@ export const data = [
 	{
 		id: 2,
 		h3: 'Консультация перинатального психолога',
-		link: 'консультация-перинатального-психолога',
+		link: 'konsultatsiya-perinatalnogo-psikhologa',
 		img: perinatalnyj,
 		type: [
 			{
@@ -103,7 +103,7 @@ export const data = [
 	{
 		id: 3,
 		h3: 'Консультация семейного психолога',
-		link: 'семейный-психолог',
+		link: 'semeinii-psikholog',
 		img: semejnyj,
 		type: [
 			{
@@ -140,7 +140,7 @@ export const data = [
 	{
 		id: 4,
 		h3: 'Консультация подросткового психолога',
-		link: 'психолог-для-подростка',
+		link: 'psikholog-dlya-podrostka',
 		img: podrostkovyj,
 		type: [
 			{

@@ -50,7 +50,7 @@ export default async function BlogPage () {
 								<div className='xy:w-8/12 sd:w-full relative'>
 									
 									<h3 className='text-lg'>
-										<Link href={{ pathname: `/blog/${el.link}/${el.id}` }}
+										<Link href={{ pathname: `/blog/${el.link}` }}
 											className='border-b border-black'
 											// onClick={() => countPlusOne(el.id)}
 										>
