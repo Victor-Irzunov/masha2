@@ -10,7 +10,7 @@ import Image from "next/image"
 const ContentSection = () => {
 	return (
 		<article>
-			<section className='sd:px-10 xy:px-5 py-10'>
+			<section className='sd:px-10 xyy:px-5 py-10'>
 				<div className='container'>
 					<motion.div
 						className='mb-20'

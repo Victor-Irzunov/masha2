@@ -51,7 +51,7 @@ export const FooterComp = () => {
   }
 
   return (
-    <footer className='sd:px-10 xy:px-5 pt-10 bg-white h-[80vh] flex overflow-hidden'>
+    <footer className='sd:px-10 xyy:px-5 pt-10 bg-white h-[80vh] flex overflow-hidden'>
       <FloatButton.BackTop />
       <div className='sd:ml-10 xy:ml-0 flex flex-col justify-between'>
         <div>
@@ -62,13 +62,13 @@ export const FooterComp = () => {
           >
             <motion.h2
               variants={titleAnimation}
-              className='sd:text-8xl xy:text-4xl font-extrabold uppercase sd:mr-8 xy:mr-3'
+              className='sd:text-8xl xyy:text-4xl font-extrabold uppercase sd:mr-8 xy:mr-3'
             >
               мария
             </motion.h2>
             <motion.h2
               variants={titleAnimation3}
-              className='sd:text-8xl xy:text-4xl font-extrabold uppercase'
+              className='sd:text-8xl xyy:text-4xl font-extrabold uppercase'
             >
               ирзунова
             </motion.h2>
@@ -122,7 +122,7 @@ export const FooterComp = () => {
       font-normal
       text-left
       sm:text-[14px]
-      xy:text-[10px]
+      xyy:text-[10px]
    
       text-gray-400
       mt-0

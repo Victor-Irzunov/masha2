@@ -52,7 +52,7 @@ const SectionMainPage = () => {
 	}
 	return (
 		<section
-			className="sd:px-20 xy:px-5"
+			className="sd:px-20 xyy:px-5"
 		>
 			{itemsSection.map(el => {
 				return (
@@ -78,7 +78,7 @@ const SectionMainPage = () => {
 							<div className="w-1/2">
 								<h2 className="sd:text-4xl xy:text-xl font-bold ">{el.title}</h2>
 								<h3 className="sd:text-xl xy:text-sm text-white">{el.content}</h3>
-								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`} className="duration-150 sd:text-lg xy:text-xs mt-10 hover:mr-2">
+								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}/`} className="duration-150 sd:text-lg xy:text-xs mt-10 hover:mr-2">
 									перейти на страницу
 								</Link>
 								<ArrowRightOutlined className="sd:text-sm xy:text-xs ml-1" />

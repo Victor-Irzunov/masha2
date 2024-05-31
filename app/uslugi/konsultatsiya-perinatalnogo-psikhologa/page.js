@@ -9,7 +9,7 @@ import LinkArticleClient from '../../../components/linkArticleClient/LinkArticle
 
 
 export const metadata = {
-	title : 'Перинатальный психолог в Минске | Психолог Ирзунова Мария',
+	title : 'Перинатальный психолог в Минске | Ирзунова Мария',
 	description : 'Перинатальный психолог Ирзунова Мария в Минске поможет подготовиться к родам и материнству, справиться с послеродовой депрессией, тревогой и страхами. Психотерапия для беременных, рожениц и мам.',
 	alternates: {
 		canonical: 'https://irzunova.by/uslugi/konsultatsiya-perinatalnogo-psikhologa'

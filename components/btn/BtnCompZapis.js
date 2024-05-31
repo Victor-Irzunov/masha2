@@ -22,7 +22,9 @@ const BtnCompZapis = ({conclusion, price}) => {
 				<Image src={`${conclusion ? '/images/click-white.svg': '/images/click.svg'}`}
 					alt="Клик для записи"
 					width={20} height={20}
-					className="ml-1" />
+					className="ml-1"
+					preview={false}
+				/>
 			</div>
 
 			<ModalZapisi isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} price={price} />

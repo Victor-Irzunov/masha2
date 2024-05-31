@@ -38,7 +38,7 @@ const ObratiliVnimanieBlock = () => {
 			whileInView="visible"
 			className='px-10 pt-10 bg-white pb-10'
 		>
-			<div className='flex justify-between xy:flex-col sd:flex-row'>
+			<div className='flex justify-between xyy:flex-col sd:flex-row'>
 				<div className='sd:w-1/5 xy:w-full pt-6 mb-5'>
 					<h4 className=''>На мою работу обратили внимание следующие авторитетные издания:</h4>
 				</div>

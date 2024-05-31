@@ -19,11 +19,11 @@ const Home = () => {
   return (
     <section className='mt-6 overflow-hidden pt-8'>
       <div
-        className='sd:px-10 xy:px-5'
+        className='sd:px-10 xyy:px-5'
       >
         <div className=''>
           <h1
-            className='text-[#191c1d] sd:text-8xl xy:text-4xl font-semibold'>
+            className='text-[#191c1d] sd:text-8xl xyy:text-5xl font-semibold'>
             Психолог
             <span className='text-white'>
               {' '}в Минске
@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             <div className='flex-grow sd:order-2'>
               <p className='leading-6 tracking-wide font-light sd:text-base xyy:text-sm text-justify'>
-              Здравствуйте, меня зовут Мария Ирзунова. Я клинический и перинатальный психолог с медицинским образованием, Член Международной Ассоциации Психологов, Член Российской Ассоциации Психологов, работаю в сети клиник «Evaclinic” репродуктивного здоровья и ВРТ, провожу частные консультации в личном кабинете в г.Минске и по всему Миру онлайн более 9 лет, пишу статьи для крупных изданий, автор оффлайн курса для беременных, участвую в волонтерских проектах.
+                Здравствуйте, меня зовут Мария Ирзунова. Я клинический и перинатальный психолог с медицинским образованием, Член Международной Ассоциации Психологов, Член Российской Ассоциации Психологов, работаю в сети клиник «Evaclinic” репродуктивного здоровья и ВРТ, провожу частные консультации в личном кабинете в г.Минске и по всему Миру онлайн более 9 лет, пишу статьи для крупных изданий, автор оффлайн курса для беременных, участвую в волонтерских проектах.
               </p>
               <p className='mt-6 mb-2'>
                 Мои принципы в работе:
@@ -90,10 +90,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='w-full flex justify-around mt-20 xy:items-center xx:items-center sd:items-start xx:flex-col xy:flex-col sd:flex-row'
+        <div className='w-full flex justify-around mt-20 xy:items-center xx:items-center sd:items-start xx:flex-col xyy:flex-col sd:flex-row'
         >
-          <div className='mb-5 bg-[#65a30c] rounded-3xl px-6 py-3 font-bold'>
-             <BtnCompZapis conclusion/>
+          <div className='mb-5 bg-[#65a30c] rounded-3xl sd:px-6 xyy:px-3 py-3 font-bold'>
+            <BtnCompZapis conclusion />
           </div>
           <div className='z-10'>
             <BtnMenuNavigate />

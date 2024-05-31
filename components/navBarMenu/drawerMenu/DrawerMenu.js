@@ -1,6 +1,6 @@
 // "use client"
 import { useState, useContext, useEffect } from 'react'
-import {  Drawer } from 'antd'
+import { Drawer } from 'antd'
 import { motion } from "framer-motion"
 import { navBar } from '../../../constans/Constans'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ import Image from 'next/image'
 import { transliterate } from '../../../transliterate/transliterate'
 
 
-const DrawerMenu = observer(({ setOpenMenu, openMenu, exit ,showModal,imgAnimation, open, setOpen}) => {
+const DrawerMenu = observer(({ setOpenMenu, openMenu, exit, showModal, imgAnimation, open, setOpen }) => {
 	const [childrenDrawer, setChildrenDrawer] = useState(false)
 
 	const onClose = () => {
@@ -54,7 +54,7 @@ const DrawerMenu = observer(({ setOpenMenu, openMenu, exit ,showModal,imgAnimati
 														className='mb-4'
 														onClick={onClose}
 													>
-														<Link href={`${transliterate(el.link)}`}
+														<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
 															className='
 										relative
 										before:border-b
@@ -84,7 +84,7 @@ const DrawerMenu = observer(({ setOpenMenu, openMenu, exit ,showModal,imgAnimati
 													className='mb-4'
 													onClick={onClose}
 												>
-													<Link href={`${transliterate(el.link)}`}
+													<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
 														className='
 										relative
 										before:border-b
@@ -108,7 +108,7 @@ const DrawerMenu = observer(({ setOpenMenu, openMenu, exit ,showModal,imgAnimati
 										}
 									})
 								}
-								
+
 							</ul>
 						</div>
 						<motion.div

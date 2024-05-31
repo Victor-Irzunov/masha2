@@ -323,29 +323,35 @@ export const navBar = [
 	},
 
 	{
+		link: '/zapisatsya/',
+		label: 'записаться',
+		key: 4
+	},
+
+	{
 		link: '/blog/',
 		label: 'мои статьи',
-		key: 4
+		key: 5
 	},
 	{
 		link: '/smi/',
 		label: 'я в СМИ',
-		key: 5
+		key: 6
 	},
 	{
 		link: '/psiholog-mariya-irzunova/',
 		label: 'обо мне',
-		key: 6
+		key: 7
 	},
 	{
 		link: '/otzivi/',
 		label: 'отзывы',
-		key: 7
+		key: 8
 	},
 	{
 		link: '/kontakti/',
 		label: 'контакты',
-		key: 8
+		key: 9
 	},
 
 ]

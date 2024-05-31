@@ -1,5 +1,7 @@
 import Image from "next/image"
 import info from '../../public/images/Info.svg'
+import BtnCompZapis from '../../components/btn/BtnCompZapis';
+import { Button } from "antd";
 
 export const metadata = {
 	title: 'Психолог Минск цена | Ирзунова Мария',
@@ -141,15 +143,22 @@ const PricePage = () => {
 			</div>
 
 			<div className='mt-10 text-gray-600 font-light leading-5 sd:px-10 xy:px-5 text-sm'>
-				<div className='flex'>
+				{/* <div className='flex'>
 					<Image src={info} width={30} height={30} className="animate-bounce" alt="Информация для клиента" />
 					<p className="font-semibold ml-3">
-					На второй индивидуальной консультации и последующих сессиях стоимость составляет <span className="bg-lime-600 p-1 text-white leading-8">85,00 рублей</span>.
+						На второй индивидуальной консультации и последующих сессиях стоимость составляет <span className="bg-lime-600 p-1 text-white leading-8">85,00 рублей</span>.
 					</p>
-				</div>
+				</div> */}
 				<p className="mt-8">
 					Оплатить консультацию можно наличными или сделать перевод с банковской карты или через ЕРИП.
 				</p>
+			</div>
+
+			<div className='mt-8 pl-9'>
+
+				<Button className=''>
+					<BtnCompZapis conclusion />
+				</Button>
 			</div>
 
 			<section className='sd:px-10 xy:px-5 py-10 bg-[#191c1d] mt-20'>

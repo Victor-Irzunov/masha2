@@ -44,7 +44,7 @@ const TntVideoBlock = () => {
 		<motion.section
 			initial="hidden"
 			whileInView="visible"
-			className='sd:px-10 xy:px-5 py-20'
+			className='sd:px-10 xyy:px-5 py-20'
 			id="tnt"
 		>
 			<motion.div
@@ -94,7 +94,7 @@ const TntVideoBlock = () => {
 				<p className='mt-14 sd:text-base xy:text-sm'>
 					Если Вы устали держать всё в себе и Вам хочеться с кем-то поделиться и найти правильное решение?
 				</p>
-				<div className='flex xy:flex-col sd:flex-row sd:items-center xy:items-start'>
+				<div className='flex xyy:flex-col sd:flex-row sd:items-center xy:items-start'>
 					<p className='mr-7 pt-4 sd:text-base xy:text-sm mb-3'>Запишитесь ко мне на онлайн или оффлайн консультацию</p>
 					<Popover content={content}>
 						<div className='mb-5 bg-[#65a30c] rounded-3xl px-6 py-3 font-bold mt-3'>

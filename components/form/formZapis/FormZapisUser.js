@@ -1,3 +1,4 @@
+"use client"
 import { useState, forwardRef } from 'react'
 import { Button, Select, Form, Input, Space, Radio, message, Alert } from 'antd'
 import InputMask from 'react-input-mask'
@@ -43,11 +44,13 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue, price, handleCance
 
 
 		sendOrderTelegram(messageForm)
-    .then(data => {
-        handleCancel()
-        message.success('Ваша заявка принята, Мария в ближайшее время свяжется с вами.', [6]);
-        form.resetFields();
-    });
+			.then(data => {
+				if (handleCancel) {
+					handleCancel()
+				}
+				message.success('Ваша заявка принята, Мария в ближайшее время свяжется с вами.', [6]);
+				form.resetFields();
+			});
 
 	}
 
@@ -81,7 +84,7 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue, price, handleCance
 
 	return (
 		<>
-		
+
 
 			<ModalComp
 				setIsModalOpen={setIsModalOpen}

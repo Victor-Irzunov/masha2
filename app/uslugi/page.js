@@ -24,7 +24,7 @@ const ServicePage = () => {
 	return (
 		<section className='pt-10'>
 			<div
-				className='sd:px-10 xy:px-5 mb-12'
+				className='sd:px-10 xyy:px-5 mb-12'
 			>
 				<h1
 					className='sd:text-6xl xy:text-4xl text-[#191c1d] font-extrabold uppercase'

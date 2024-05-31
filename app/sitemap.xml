@@ -1,6 +1,3 @@
-Конечно, вот полный файл sitemap с добавленными датой последнего изменения, частотой изменений и приоритетом для каждого URL:
-
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 

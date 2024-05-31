@@ -8,12 +8,12 @@ import {
 const SectionFormMainPage = () => {
 	return (
 		<section
-			className='sd:px-10 xy:px-5 py-10 bg-[#191c1d]'
+			className='sd:px-10 xyy:px-5 py-10 bg-[#191c1d]'
 			id='form'
 		>
 			<div className='container'>
 				<motion.div
-					className='flex justify-between xy:flex-col sd:flex-row'
+					className='flex justify-between xyy:flex-col sd:flex-row'
 					initial="hidden"
 					whileInView="visible"
 				>
@@ -34,4 +34,4 @@ const SectionFormMainPage = () => {
 		</section>
 	)
 }
-export {SectionFormMainPage}
+export { SectionFormMainPage }
